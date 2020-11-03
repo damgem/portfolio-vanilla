@@ -1,0 +1,52 @@
+.badge {
+    background-color: grey;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.tag-js {
+    background-color: #f4d03f;
+}
+
+.tag-css {
+    background-color: #76d7c4;
+}
+
+.tag-bootstrap {
+    background-color: #7dcea0;
+}
+
+.tag-cpp {
+    background-color: #5dade2;
+}
+
+.tag-r {
+    background-color:  #95a5a6;
+}
+
+.tag-html {
+    background-color: #82e0aa;
+}
+
+.tag-python {
+    background-color: #f1948a;
+}
+
+.tag-flask {
+    background-color: #edbb99;
+}
+
+.tag-numpy {
+    background-color: #f5b7b1;
+}
+
+.tag-pandas {
+    background-color: #f5b7b1;
+}
+
+.tag-matplotlib {
+     background-color: #d2b4de;
+}
+
+.tag-bokeh {
+     background-color: #d2b4de;
+}

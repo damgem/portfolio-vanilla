@@ -1,0 +1,461 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug==" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <link href="tags.css" rel="stylesheet">
+        <link href="slanted.css" rel="stylesheet">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body, html {
+                height: 100%;
+                color: black;
+                font-family: 'Bebas Neue', cursive;
+            }
+
+            strong {
+                color: darkred;
+            }
+
+            nav {
+                font-size: 30px;
+                position: fixed;
+                top: 0px;
+            }
+
+            .navbar .navbar-nav > li > a {
+                color: white;
+                padding: 0px;
+                line-height: 80%;
+            }
+
+            .navbar .navbar-nav > li > a:hover,
+            .navbar .navbar-nav > li > a:focus {
+                color: orange;
+            }
+
+            #start {
+                background-image: url("background_plant.jpg");
+                background-color: #fff;
+                background-position: left;
+                background-repeat: no-repeat;
+                background-size: cover;
+                max-height: 1080px;
+            }
+
+            #uebermich {
+                background-image: url("background_coffee.jpg");
+                background-color: #fff;
+                background-position: bottom;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .card {
+                background-color: #f9f9f9;
+            }
+
+            .content-text {
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+
+            .card .card-body .card-text {
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+
+            .card .card-body small {
+                color: grey;
+                margin-bottom: 1rem;
+            }
+
+            .icon-circle {
+                font-size: 30px;
+                border-radius: 50%;
+                background-color: #d9d9d9;
+                padding: 20px;
+            }
+
+            .text-circle {
+                font-size: 20px;
+                border-radius: 15px;
+                background-color: #d9d9d9;
+                padding: 10px;
+            }
+
+            .bar-y, .bar-n {
+                display: inline-block;
+                width: 30px;
+                height: 19px;
+                padding: 0px;
+                margin-left: 5px;
+            }
+
+            .slanted.bar-y,
+            .slanted.bar-n {
+                background-color: unset;
+            }
+
+            .slanted.bar-y::before {
+                background-color: orange;
+            }
+            .slanted.bar-n::before {
+                background-color: grey;
+            }
+
+            .bar-label {
+                margin-bottom: 0;
+                font-size: 25px;
+                line-height: 20px;
+                transform: translateY(1px);
+            }
+
+            .bordered {
+                border: 1px solid grey;
+                border-radius: 20px;
+                padding: 10px 40px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="slanted-outer" style="z-index: 10;">
+            <div class="slanted-right">
+                <div class="navbar navbar-expand">
+                    <ul class ="navbar-nav list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#start">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projekte">Projekte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#uebermich">Über Mich</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fähigkeiten">Fähigkeiten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- About Me -->
+        <div class="container">
+
+            <!-- Start -->
+            <div id="start" class="row h-100 pb-5">
+                <div class="col-lg-6 col-md-9 col-sm-12 m-auto text-center">
+                    <h1 class="mb-0">
+                        Hi, Ich bin <strong>Damian Gleumes</strong>
+                    </h1>
+                    <h3>
+                        Informatikstudent an der Uni Bonn mit großer Leidenschaft für <abbr title="Künstliche Intelligenz">KI</abbr> und Design
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Experiences -->
+            <div id="projekte" class="row my-5">
+                <div class="col-12 mb-4">
+                    <h1 class="text-center">Meine Projekte</h1>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Excel Web-Add-In
+                            </h3>
+                            <p class="card-text">
+                                Eine Schnittstelle zur Portfolioverwaltung mittels synchronisierbarer Exceltabellen.
+                            </p>
+                            <small class="d-block">
+                                <i class="fas fa-map-marker-alt mr-1"></i>
+                                QUANVEST GmbH
+                            </small>
+                            <div class="row" style="margin:-0.25rem;">
+                                <span class="col-auto m-1 badge tag-css">CSS3</span>
+                                <span class="col-auto m-1 badge tag-bootstrap">Bootstrap</span>
+                                <span class="col-auto m-1 badge tag-html">HTML5</span>
+                                <span class="col-auto m-1 badge tag-flask">Flask</span>
+                                <span class="col-auto m-1 badge tag-python">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Twitter Analyse
+                            </h3>
+                            <p class="card-text">
+                                Tweetanalysen bezüglich Sentiment sowie positiv und negativ geprägter Wortfelder. Interaktive Visualisierung der Ergebnisse.
+                            </p>
+
+                            <small class="d-block">
+                                <i class="fas fa-map-marker-alt mr-1"></i>
+                                QUANVEST GmbH
+                            </small>
+
+                            <div class="row" style="margin:-0.25rem;">
+                                <span class="col-auto m-1 badge tag-python">Python</span>
+                                <span class="col-auto m-1 badge tag-numpy">Numpy</span>
+                                <span class="col-auto m-1 badge tag-pandas">Pandas</span>
+                                <span class="col-auto m-1 badge tag-matplotlib">Matplotlib</span>
+                                <span class="col-auto m-1 badge tag-bokeh">Bokeh</span>
+                                <span class="col-auto m-1 badge tag-css">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                C++ Jugend-Workshops
+                            </h3>
+                            <p class="card-text">
+                                Anfänger und Fortgeschrittene Programmierkurse für Jugendliche zwischen 13-16 Jahre.
+                            </p>
+                            <small class="d-block">
+                                <i class="fas fa-map-marker-alt mr-1"></i>
+                                SK-Jugend der Sparkasse KölnBonn
+                            </small>
+                            <div class="row" style="margin:-0.25rem;">
+                                <span class="col-auto m-1 badge tag-cpp">C++</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Rcpp Filter
+                            </h3>
+                            <p class="card-text">
+                                Ein R Package für effiziente und flexible Filterung eines DataFrames implementiert in C++.
+                            </p>
+                            <small class="d-block">
+                                <i class="fas fa-map-marker-alt mr-1"></i>
+                                QUANVEST GmbH
+                            </small>
+                            <div class="row" style="margin:-0.25rem;">
+                                <span class="col-auto m-1 badge tag-cpp">C++</span>
+                                <span class="col-auto m-1 badge tag-r">R</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Me -->
+            <div id="uebermich" class="row py-5">
+                <div class="col-12 mb-4">
+                    <h1 class="text-center">Über Mich</h1>
+                </div>
+
+                <div class="col-sm-6 col-lg-5 offset-lg-1">
+                    <i class="fas fa-palette icon-circle"></i>
+                    <h1 class="d-inline ml-4">Kreativ</h1>
+                    <p class="content-text mt-3">
+                        Ich zeichne und singe gerne; spiele Klarinette und Ukulele.
+                        Knobelaufgaben sind was für mich und thinking-out-of-the box fällt mir zu.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-lg-5">
+                    <i class="fas fa-book-open icon-circle"></i>
+                    <h1 class="d-inline ml-4">Autodidaktisch</h1>
+                    <p class="content-text mt-3">
+                        Ich bin sehr wissbegierig und kann mir gut Sachen eigenständig aneignen.
+                        Ohne das hätte ich wohl nie das Programmieren angefangen!
+                    </p>
+                </div>
+                <div class="col-sm-6 col-lg-5 offset-lg-1">
+                    <i class="fas fa-brain icon-circle"></i>
+                    <h1 class="d-inline ml-4">Mitdenkend</h1>
+                    <p class="content-text mt-3">
+                        Ich bin kein Roboter!
+                        Ich versuche stets meinen eigenen Geist in das Projekt miteinfließen zu lassen,
+                        um das Endresultat so hochwertig wie möglich zu gestalten.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-lg-5">
+                    <i class="fas fa-eye icon-circle"></i>
+                    <h1 class="d-inline ml-4">Ein Auge für Design</h1>
+                    <p class="content-text mt-3">
+                        Funktionalität ohne kommunikativem Design ist nichts! Mit einer Augenärztin als Mutter habe ich ein genaues Auge geerbt.
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="fähigkeiten" class="row py-5 px-lg-5 px-sm-0">
+                <div class="col-12 mb-4">
+                    <h1 class="text-center">Technische Fertigkeiten</h1>
+                </div>
+                <div class="col-md-6 col-sm-12 p-2">
+                    <div class="bordered">
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">Python 3.8</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y mr-auto"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">Numpy / Pandas</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">Matplotlib / Bokeh</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 p-2">
+                    <div class="bordered">
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">CSS</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">Bootstrap</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">JS</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 p-2">
+                    <div class="bordered">
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">C / C++</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">Java</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">R</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 p-2">
+                    <div class="bordered">
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">Linux</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">Docker</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">Git</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 p-2">
+                    <div class="bordered">
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">MongoDB</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">SQL</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="kontakt" class="row py-5">
+                <div class="col-12 mb-4">
+                    <h1 class="text-center">Kontakt</h1>
+                </div>
+
+                <p class="content-text text-center w-100" style="font-size: 25px;">
+                    Schreib mir eine Mail!<br>
+                    <a class="bordered d-inline-block mt-2" href="mailto:damgem@zoho.com"><strong>damgem@zoho.com</strong></a>
+                </p>
+            </div>
+
+        </div>
+    </body>
+</html>

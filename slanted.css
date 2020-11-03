@@ -1,0 +1,44 @@
+.slanted-outer {
+    display: flex;
+}
+
+.slanted,
+.slanted-right {
+    position: relative;
+    background-color: #4d4d4d;
+}
+
+
+
+
+.slanted::before,
+.slanted-right::before,
+.slanted-right::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background-color: inherit;
+}
+
+.slanted {
+    bottom: 1px;
+}
+
+.slanted::before {
+    right: 0;
+    left: 0;
+    transform: skew(-45deg);
+}
+
+.slanted-right::before {
+    right: 25%;
+    left: 0;
+}
+
+.slanted-right::after {
+    right: -31;
+    left: 25%;
+    transform: skew(-45deg);
+}
