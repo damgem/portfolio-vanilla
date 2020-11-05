@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>Damian Gleumes</title>
-        
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
@@ -55,7 +55,7 @@
                 max-height: 1080px;
             }
 
-            #uebermich {
+            #softskills {
                 background-image: url("background_coffee.jpg");
                 background-color: #fff;
                 background-position: bottom;
@@ -84,7 +84,7 @@
                 font-size: 30px;
                 border-radius: 50%;
                 background-color: #d9d9d9;
-                padding: 20px;
+                padding: 18px;
             }
 
             .text-circle {
@@ -138,16 +138,16 @@
                 <div class="navbar navbar-expand">
                     <ul class ="navbar-nav list-unstyled">
                         <li class="nav-item">
-                            <a class="nav-link" href="#start">Home</a>
+                            <a class="nav-link" href="#start">Start</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projekte">Projekte</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#uebermich">Über Mich</a>
+                            <a class="nav-link" href="#softskills">Soft Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#fähigkeiten">Fähigkeiten</a>
+                            <a class="nav-link" href="#hardskills">Hard Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#kontakt">Kontakt</a>
@@ -163,21 +163,21 @@
         <div class="container">
 
             <!-- Start -->
-            <div id="start" class="row h-100 pb-5">
-                <div class="col-lg-6 col-md-9 col-sm-12 m-auto text-center">
+            <div id="start" class="row h-100">
+                <div class="col-lg-6 col-md-9 col-sm-12 m-auto text-center pb-5">
                     <h1 class="mb-0">
-                        Hi, Ich bin <strong>Damian Gleumes</strong>
+                        Hallo, ich bin <strong>Damian Gleumes</strong>
                     </h1>
                     <h3>
-                        Informatikstudent an der Uni Bonn mit großer Leidenschaft für <abbr title="Künstliche Intelligenz">KI</abbr> und Design
+                        Informatikstudent an der Universität Bonn mit großer Begeisterung für KI und Design
                     </h3>
                 </div>
             </div>
 
             <!-- Experiences -->
             <div id="projekte" class="row py-5">
-                <div class="col-12 mb-4">
-                    <h1 class="text-center">Meine Projekte</h1>
+                <div class="col-12 mb-5 mt-4">
+                    <h1 class="text-center mb-0">Projekte</h1>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -187,7 +187,7 @@
                                 Excel Web-Add-In
                             </h3>
                             <p class="card-text">
-                                Eine Schnittstelle zur Portfolioverwaltung mittels synchronisierbarer Exceltabellen.
+                                Eine Schnittstelle zur Portfolio-Verwaltung mittels synchronisierbarer Excel-Tabellen.
                             </p>
                             <small class="d-block">
                                 <i class="fas fa-map-marker-alt mr-1"></i>
@@ -233,25 +233,6 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">
-                                C++ Jugend-Workshops
-                            </h3>
-                            <p class="card-text">
-                                Anfänger und Fortgeschrittene Programmierkurse für Jugendliche zwischen 13-16 Jahre.
-                            </p>
-                            <small class="d-block">
-                                <i class="fas fa-map-marker-alt mr-1"></i>
-                                SK-Jugend der Sparkasse KölnBonn
-                            </small>
-                            <div class="row" style="margin:-0.25rem;">
-                                <span class="col-auto m-1 badge tag-cpp">C++</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">
                                 Rcpp Filter
                             </h3>
                             <p class="card-text">
@@ -268,32 +249,51 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                C++ Jugend-Workshops
+                            </h3>
+                            <p class="card-text">
+                                Programmierkurs für Jugendliche im Alter von 13 bis 16 Jahren. Sowohl Anfänger-, als auch Fortgeschrittene-Kurse.
+                            </p>
+                            <small class="d-block">
+                                <i class="fas fa-map-marker-alt mr-1"></i>
+                                SK-Jugend der Sparkasse Köln-Bonn
+                            </small>
+                            <div class="row" style="margin:-0.25rem;">
+                                <span class="col-auto m-1 badge tag-cpp">C++</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- About Me -->
-            <div id="uebermich" class="row py-5">
-                <div class="col-12 mb-4">
-                    <h1 class="text-center">Über Mich</h1>
+            <div id="softskills" class="row pt-5">
+                <div class="col-12 mt-4 mb-5">
+                    <h1 class="text-center">Soft Skills</h1>
                 </div>
 
-                <div class="col-sm-6 col-lg-5 offset-lg-1">
-                    <i class="fas fa-palette icon-circle"></i>
+                <div class="col-sm-6 col-lg-5 offset-lg-1 mb-5">
+                    <i class="fas fa-palette icon-circle" style="color:orange;"></i>
                     <h1 class="d-inline ml-4">Kreativ</h1>
                     <p class="content-text mt-3">
                         Ich zeichne und singe gerne; spiele Klarinette und Ukulele.
                         Knobelaufgaben sind was für mich und thinking-out-of-the box fällt mir zu.
                     </p>
                 </div>
-                <div class="col-sm-6 col-lg-5">
-                    <i class="fas fa-book-open icon-circle"></i>
+                <div class="col-sm-6 col-lg-5 mb-5">
+                    <i class="fas fa-book-open icon-circle" style="color:forestgreen;"></i>
                     <h1 class="d-inline ml-4">Autodidaktisch</h1>
                     <p class="content-text mt-3">
                         Ich bin sehr wissbegierig und kann mir gut Sachen eigenständig aneignen.
                         Ohne das hätte ich wohl nie das Programmieren angefangen!
                     </p>
                 </div>
-                <div class="col-sm-6 col-lg-5 offset-lg-1">
-                    <i class="fas fa-brain icon-circle"></i>
+                <div class="col-sm-6 col-lg-5 offset-lg-1 mb-5">
+                    <i class="fas fa-brain icon-circle" style="color:darkred;"></i>
                     <h1 class="d-inline ml-4">Mitdenkend</h1>
                     <p class="content-text mt-3">
                         Ich bin kein Roboter!
@@ -301,8 +301,8 @@
                         um das Endresultat so hochwertig wie möglich zu gestalten.
                     </p>
                 </div>
-                <div class="col-sm-6 col-lg-5">
-                    <i class="fas fa-eye icon-circle"></i>
+                <div class="col-sm-6 col-lg-5 mb-5">
+                    <i class="fas fa-eye icon-circle" style="color:royalblue;"></i>
                     <h1 class="d-inline ml-4">Ein Auge für Design</h1>
                     <p class="content-text mt-3">
                         Funktionalität ohne kommunikativem Design ist nichts! Mit einer Augenärztin als Mutter habe ich ein genaues Auge geerbt.
@@ -311,9 +311,9 @@
             </div>
 
 
-            <div id="fähigkeiten" class="row py-5 px-lg-5 px-sm-0">
-                <div class="col-12 mb-4">
-                    <h1 class="text-center">Technische Fertigkeiten</h1>
+            <div id="hardskills" class="row py-5 px-lg-5 px-sm-0">
+                <div class="col-12 mt-4 mb-3">
+                    <h1 class="text-center">Hard Skills</h1>
                 </div>
                 <div class="col-md-6 col-sm-12 p-2">
                     <div class="bordered">
@@ -447,16 +447,41 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-sm-12 p-2">
+                    <div class="bordered">
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">GIMP</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                        <div class="row no-gutter justify-items-center align-items-center my-3">
+                            <label class="col-lg-6 col-md-5 col-sm-6 col-6 bar-label">Figma</label>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-y"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                            <i class="col-1 slanted bar-n"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="kontakt" class="row py-5">
-                <div class="col-12 mb-4">
+                <div class="col-12 mt-4 mb-5">
                     <h1 class="text-center">Kontakt</h1>
                 </div>
 
                 <p class="content-text text-center w-100" style="font-size: 25px;">
-                    Schreib mir eine Mail!<br>
-                    <a class="bordered d-inline-block mt-2" href="mailto:damgem@zoho.com"><strong>damgem@zoho.com</strong></a>
+                    Ich freue mich über eine E-Mail!<br>
+                    <a class="bordered d-inline-block align-items-center mt-3 btn" href="mailto:damgem@zoho.com">
+                        <strong>
+                            <i class="fas fa-envelope-open" style="font-size: 150%;"></i>
+                            <span>damgem@zoho.com</span>
+                        </strong>
+                    </a>
                 </p>
             </div>
 
